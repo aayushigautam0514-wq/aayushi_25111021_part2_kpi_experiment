@@ -34,3 +34,20 @@ Paid Conversion Rate is directly linked to business growth because an increase i
 ### Risk of Optimizing Only This Metric
 
 Focusing only on Paid Conversion Rate may lead to unintended consequences. For example, conversions may increase while refund requests, support tickets, or customer dissatisfaction also increase. Therefore, guardrail metrics such as Refund Rate, Support Ticket Rate, Days to Convert, and Engagement Score must also be monitored before making a final launch decision.
+
+## Guardrail Metrics Evaluation
+
+### Refund Rate
+The Treatment group showed a refund rate of 0.42% compared to 0.00% in the Control group. Although refunds increased slightly, the overall refund rate remains very low and does not represent a significant business risk.
+
+### Support Ticket Rate
+The Support Ticket Rate increased from 14.72% in the Control group to 24.76% in the Treatment group. This indicates that users in the Treatment group required more support, suggesting that some aspects of the new onboarding experience may need improvement before a full rollout.
+
+### Average Engagement Score
+The average engagement score increased from 57.03 to 62.93, indicating that users who experienced the new onboarding campaign were more engaged with the product.
+
+### Average Days to Convert
+The average days to convert decreased from 8.86 days to 6.40 days. This shows that users in the Treatment group converted to paid subscriptions more quickly than users in the Control group.
+
+### Overall Assessment
+The Treatment group achieved a significant improvement in paid conversion, user engagement, and conversion speed. However, the higher Support Ticket Rate suggests that the new onboarding experience may create additional customer support needs. This should be investigated before a full rollout.
