@@ -51,3 +51,113 @@ The average days to convert decreased from 8.86 days to 6.40 days. This shows th
 
 ### Overall Assessment
 The Treatment group achieved a significant improvement in paid conversion, user engagement, and conversion speed. However, the higher Support Ticket Rate suggests that the new onboarding experience may create additional customer support needs. This should be investigated before a full rollout.
+
+
+# Part 2: KPI Experiment Analysis
+
+## Business Context
+
+A subscription-based digital product company launched a new onboarding and activation campaign to improve user conversion and early engagement. An A/B experiment was conducted to compare the existing onboarding experience (Control) with the new onboarding experience (Treatment). The objective was to determine whether the new onboarding campaign should be launched to all users.
+
+## Dataset Description
+
+The dataset contains user-level experiment data, including:
+
+* User ID
+* Experiment Group (Control/Treatment)
+* Region
+* Device Type
+* Traffic Source
+* Plan Type
+* Landing Page Visit
+* Trial Start
+* Onboarding Completion
+* Paid Conversion
+* Revenue (30 Days)
+* Support Tickets
+* Refund Requests
+* Days to Convert
+* Engagement Score
+
+## North Star Metric
+
+**Paid Conversion Rate**
+
+Paid Conversion Rate was selected because it directly measures the success of the onboarding campaign in converting users into paying customers, making it the most important indicator of business growth.
+
+## KPI Tree Summary
+
+The KPI Tree uses Paid Conversion Rate as the North Star Metric and identifies the following primary drivers:
+
+* User Acquisition
+* Onboarding Success
+* Revenue & Retention
+
+Guardrail metrics include:
+
+* Refund Rate
+* Support Ticket Rate
+* Average Engagement Score
+* Average Days to Convert
+
+## Experiment Analysis Approach
+
+The dataset was prepared by checking:
+
+* Missing values
+* Group counts
+* Duplicate User IDs
+* Invalid binary values
+* Revenue outliers
+* Segment distribution
+
+Experiment performance was summarized by comparing Control and Treatment groups across the required business metrics and selected customer segments.
+
+## Hypothesis Test Summary
+
+A one-tailed hypothesis test was performed using a significance level of 0.05 to compare the Paid Conversion Rate between the Control and Treatment groups.
+
+Results:
+
+* Control Paid Conversion Rate: **3.17%**
+* Treatment Paid Conversion Rate: **6.99%**
+* One-tailed p-value: **0.00053**
+
+Since the p-value is less than 0.05, the Null Hypothesis was rejected, indicating that the Treatment group achieved a statistically significant improvement in Paid Conversion Rate.
+
+## Guardrail Metrics Considered
+
+The following guardrail metrics were evaluated:
+
+* Refund Rate
+* Support Ticket Rate
+* Average Engagement Score
+* Average Days to Convert
+
+The Treatment group showed improved engagement and faster conversions. However, the Support Ticket Rate increased, indicating that additional user support may be required after rollout.
+
+## Final Recommendation
+
+The Treatment group demonstrated a statistically significant improvement in Paid Conversion Rate while also improving engagement and reducing the average time to convert.
+
+Although the Support Ticket Rate increased, the overall business impact of the treatment was positive. Therefore, the recommendation is to **launch the new onboarding campaign while closely monitoring support ticket trends and continuing to optimize the onboarding experience.**
+
+## Assumptions and Limitations
+
+### Assumptions
+
+* Paid Conversion Rate was selected as the North Star Metric.
+* The experiment groups were considered representative of the user population.
+* Missing Days to Convert values for non-converted users were treated as expected.
+
+### Limitations
+
+* Duplicate User IDs were identified and documented.
+* The analysis is based only on the available experiment dataset.
+* Long-term customer behavior was outside the scope of this analysis.
+
+## Screenshots Included
+
+* `summary_metrics.png`
+* `hypothesis_test_output.png`
+* `kpi_tree_preview.png`
