@@ -1,1 +1,3 @@
-# aayushi_25111021_part2_kpi_experiment
+## Business Problem Statement
+
+The company needs to decide whether the new onboarding and activation campaign should be launched to all users. This decision impacts business leadership, product teams, marketing teams, and future users. The primary objective is to improve paid user conversion while maintaining a positive user experience. Along with improving conversions, risks such as increased refund requests, higher support tickets, lower engagement, or longer conversion times must be monitored. The recommendation should be based on experiment results, statistical evidence, and guardrail metric analysis before making a final rollout decision.
